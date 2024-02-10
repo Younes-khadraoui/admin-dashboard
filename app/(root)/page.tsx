@@ -1,3 +1,9 @@
-export default function Home() {
-  return <main>Hello admin dashboard</main>;
+import { UserButton } from "@clerk/nextjs";
+
+export default function SetupPage() {
+  return (
+    <main className="p-4">
+      <UserButton afterSignOutUrl="/" />
+    </main>
+  );
 }
